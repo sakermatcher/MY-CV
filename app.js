@@ -4,5 +4,5 @@ window.addEventListener('load', (e)=>{
     setTimeout(() =>{
         splash.classList.add("display-none");
         
-    }, 00);
+    }, 5000);
 });
