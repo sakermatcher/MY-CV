@@ -20,8 +20,8 @@ html {
   font-family: 'Neon';
   src: url('Neon.eot');
   src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-    url('https://github.com/sakermatcher/MY-CV/blob/main/neon.woff') format('woff'),
-    url('https://github.com/sakermatcher/MY-CV/blob/main/neon.ttf') format('truetype'),
+    url('Neon.woff') format('woff'),
+    url('Neon.ttf') format('truetype'),
     url('Neon.svg#webfont') format('svg');
 }
 
