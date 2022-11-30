@@ -19,7 +19,7 @@ html {
 @font-face {
   font-family: 'Neon';
   src: url('Neon.eot');
-  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+  src: url('Neon.eot?#iefix') format('embedded-opentype'),
     url('Neon.woff') format('woff'),
     url('Neon.ttf') format('truetype'),
     url('Neon.svg#webfont') format('svg');
