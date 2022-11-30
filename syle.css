@@ -16,6 +16,24 @@ html {
   border-radius: 5px;
 }
 
+@font-face {
+  font-family: 'Neon';
+  src: url('Neon.eot');
+  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+    url('https://github.com/sakermatcher/MY-CV/blob/main/neon.woff') format('woff'),
+    url('https://github.com/sakermatcher/MY-CV/blob/main/neon.ttf') format('truetype'),
+    url('Neon.svg#webfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Modern';
+  src: url('modern.eot');
+  src: url('modern.eot?#iefix') format('embedded-opentype'),
+    url('modern.woff') format('woff'),
+    url('modern.ttf') format('truetype'),
+    url('modern.svg#webfont') format('svg');
+}
+
 .splash {
   position: fixed;
   top: 0;
