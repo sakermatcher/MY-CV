@@ -16,24 +16,6 @@ html {
   border-radius: 5px;
 }
 
-@font-face {
-  font-family: 'Neon';
-  src: url('Neon.eot');
-  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-    url('Neon.woff') format('woff'),
-    url('Neon.ttf') format('truetype'),
-    url('Neon.svg#webfont') format('svg');
-}
-
-@font-face {
-  font-family: 'Modern';
-  src: url('modern.eot');
-  src: url('modern.eot?#iefix') format('embedded-opentype'),
-    url('modern.woff') format('woff'),
-    url('modern.ttf') format('truetype'),
-    url('modern.svg#webfont') format('svg');
-}
-
 .splash {
   position: fixed;
   top: 0;
@@ -318,31 +300,29 @@ a.nav-button {
 }
 
 .Plink {
-  border-radius: 0.5em;
+  border-radius: 0.5%;
   font-family: neon;
-  font-size: medium;
+  font-size: 1.1vw;
   z-index: 3;
-  left: 40%;
+  left: 40vw;
   top: 387vh;
   padding-top: 0.7%;
   padding-bottom: 0.7%;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
   color: #be1862;
   background-color: rgb(250, 250, 250);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
   display: block;
   position: absolute;
   text-align: center;
 }
 
 .Phide {
-  border-radius: 0.5em;
+  border-radius: 0.5%;
   font-family: Arial;
-  font-size: medium;
+  font-size: 1vw;
   z-index: 3;
-  left: 37%;
+  left: 37.5vw;
   top: 392vh;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -350,8 +330,6 @@ a.nav-button {
   padding-right: 0em;
   color: #1b1b1b;
   background-color: rgb(250, 250, 250);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
   display: block;
   position: absolute;
   text-align: center;
