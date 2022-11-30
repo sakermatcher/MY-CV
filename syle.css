@@ -18,11 +18,11 @@ html {
 
 @font-face {
   font-family: 'Neon';
-  src: url('Neon.eot');
-  src: url('Neon.eot?#iefix') format('embedded-opentype'),
-    url('Neon.woff') format('woff'),
-    url('Neon.ttf') format('truetype'),
-    url('Neon.svg#webfont') format('svg');
+  src: url('neon.eot');
+  src: url('neon.eot?#iefix') format('embedded-opentype'),
+    url('neon.woff') format('woff'),
+    url('neon.ttf') format('truetype'),
+    url('neon.svg#webfont') format('svg');
 }
 
 @font-face {
