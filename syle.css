@@ -269,7 +269,8 @@ a.nav-button-icon {
 
 .quote {
   top: 150%;
-  left: 42%;
+  left: 35.3%;
+  font-family: Modern;
 }
 
 .sec1bak,
@@ -301,7 +302,11 @@ a.nav-button-icon {
 .sec1Txt5,
 .sec1Txt6,
 .sec1Txt7,
-.quote {
+.quote,
+.sec2Txt1,
+.sec2Txt2,
+.sec2Txt3,
+.sec2Txt4 {
   border-radius: 20px;
   color: #ffffff;
   font-size: 1.2em;
@@ -364,8 +369,8 @@ a.nav-button-icon {
   font-family: neon;
   font-size: 1.1vw;
   z-index: 3;
-  left: 40vw;
-  top: 387vh;
+  left: 39.5vw;
+  top: 386.5vh;
   padding-top: 0.7%;
   padding-bottom: 0.7%;
   padding-left: 1.5%;
@@ -481,6 +486,34 @@ a.nav-button-icon {
   height: 100vh;
   width: 100vmax;
   z-index: -5;
+}
+
+.sec2Txt1 {
+  position: absolute;
+  left: 20%;
+  top: 700vh;
+  z-index: 1;
+}
+
+.sec2Txt2 {
+  position: absolute;
+  left: 50%;
+  top: 720vh;
+  z-index: 1;
+}
+
+.sec2Txt3 {
+  position: absolute;
+  left: 40%;
+  top: 760vh;
+  z-index: 1;
+}
+
+.sec2Txt4 {
+  position: absolute;
+  left: 20%;
+  top: 700vh;
+  z-index: 1;
 }
 
 .sec3 {
