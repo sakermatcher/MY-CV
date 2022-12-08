@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Juan Pablo Pagan</title>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="css/general.css">
+  <link type="text/css" rel="stylesheet" href="css/aboutMe.css">
+</head>
+
+<body>
+
+  <div class="splash">
+    <svg viewBox="0 0 800 800">
+      <defs>
+        <g id="circles">
+          <symbol id="dot">
+            <circle cx="30" cy="30" r="30" />
+          </symbol>
+          <symbol id="moving-dot">
+            <circle class="scanner" cx="175" cy="175" r="28" />
+          </symbol>
+        </g>
+
+        <g id="filters">
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+          </filter>
+
+          <filter id="glow" filterUnits="userSpaceOnUse" x="-20%" y="-20%" height="140%" width="140%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
+          </filter>
+
+          <filter id="outer-glow" filterUnits="userSpaceOnUse" x="-50%" y="-50%" height="220%" width="220%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="outer-glow" />
+          </filter>
+        </g>
+      </defs>
+
+      <g class="circles centered">
+        <use class="dot" href="#dot" x="106" y="106" />
+        <use class="dot" href="#dot" x="0" y="150" />
+        <use class="dot" href="#dot" x="-106" y="106" />
+        <use class="dot" href="#dot" x="-150" y="0" />
+        <use class="dot" href="#dot" x="-106" y="-106" />
+        <use class="dot" href="#dot" x="0" y="-150" />
+        <use class="dot" href="#dot" x="106" y="-106" />
+        <use class="dot" href="#dot" x="150" y="0" />
+
+        <use class="dot--light" href="#moving-dot" x="-150" y="-150" />
+      </g>
+
+
+      <g class="centered">
+        <use class="dot--glowing" href="#moving-dot" x="-150" y="-150" />
+      </g>
+
+    </svg>
+    <h1 class="intro">
+      Juan Pablo Pagán Marrón
+    </h1>
+  </div>
+
+  <div class="navbar">
+    <ul class="navbar-container">
+      <li class="nav-item"><a href="#aboutMe" class="left-underline nav-button" data-scroll>About Me</a></li>
+      <li class="nav-item"><a href="programming.html" class="mid-underline nav-button" data-scroll>Programming</a></li>
+      <li class="nav-item"><a href="dance.html" class="right-underline nav-button" data-scroll>Dance</a></li>
+      <li class="nav-item"><a href="https://www.instagram.com/juan_pablo_pagan_/" target="_blank"
+          class="ig-underline nav-button-icon" data-scroll><img class="icon" src="/icons/ig.png"></a></li>
+      <li class="nav-item"><a href="https://github.com/sakermatcher" target="_blank"
+          class="git-underline nav-button-icon" data-scroll><img class="icon" src="icons/git.png"></a></li>
+      <li class="nav-item"><a href="https://www.linkedin.com/in/juan-pablo-pagan-bbab80253" target="_blank"
+          class="link-underline nav-button-icon" data-scroll><img class="icon" src="icons/link.png"></a></li>
+    </ul>
+  </div>
+
+  <div class="sec1">
+    <div class="particles" id="particles-js"></div>
+    <img class="jp" src="me/jp.png">
+    <a href="#aboutMe"><img class="arrow" src="icons/arrowDwn.png"></a>
+    <div id="aboutMe" style="top: 125vh; position:absolute;"></div>
+    <div id="sec1guide" class="centerGuide"></div>
+    <div class="sec1guideH"></div>
+    <h1 class="sec1Title">About Me</h1>
+    <img src="/me/jumpGRAND.png" class="jump">
+    <img src="/me/falseConfidence001.jpg" class="dont">
+    <heading class="quote"><b>"Don't Take Yourself So Seriously"</b></heading>
+    <iframe
+      style="border-radius:12px; top: 175vh; left: 35vw; z-index: 0; position: absolute; width: 30vw; height: 20vh;"
+      src="https://open.spotify.com/embed/track/7nDFTHHwfe32a8qdp9XqPy?utm_source=generator" frameBorder="0"
+      allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"></iframe>
+      <div class="sideGuide1" id="sec1guide"></div>
+      <div class="sideGuide2" id="sec1guide"></div>
+
+    <div id="sec1Txt1" class="txt1">
+      <p>Hello!, my name is Juan Pablo Pagan Marron, born in Cancun Mexico, on the 25th of August 2005.</p>
+    </div>
+    <div id="sec1Txt2" class="txt1">
+      <p>I have two main passions; Dancing and programming.</p>
+    </div>
+    <div id="sec1Txt3" class="txt1">
+      <p>I started dancing at the age of 11 and programming at 10, as of the day im writing this im 17 years old, I
+        am fluent in English and Spanish.</p>
+    </div>
+    <div id="sec1Txt4" class="txt1">
+      <o>I had my middle school at “Centro Escolar Balam”,I am currently having my highschool education at CUAM
+        Cancun.which is ranked the 14th best highschool in MexicoI have a 4.0 GPA and a spotless conduct record.</o>
+    </div>
+    <div id="sec1Txt5" class="txt1">
+      <p>I have followed an edX course for Python programming, allthough I did not had the chance to buy a
+        certificate.I have also self learned HTML, JavaScript, and CSS with the help of my uncle, as of today I am
+        looking to learn more languages.</p>
+    </div>
+    <div id="sec1Txt6" class="txt1">
+      <p> In the subject of dance, I am an intensive dancer that has much experience with Jazz, Hip Hop, Ballet,
+        Conthemporary, and others.</p>
+    </div>
+    <div id="sec1Txt7" class="txt1">
+      <p>-My OCEAN Personality Test-</p>
+    </div>
+
+  </div>
+
+
+  <a class="Plink" href="https://bigfive-test.com/result/632b5908a98bb60009e20206" target="_blank">Go to the official
+    webpage</a>
+  <p class="Phide"><b>I feel like this test should be here because it is one<br>of the most complete personality tests
+      out
+      there</b></p>
+  <img class="Pmain" src="personality/main.jpeg">
+
+  <img class="Pagree" src="personality/agreeableness.jpeg">
+  <img class="Pconcientiousness" src="personality/concientiousness.jpeg">
+  <img class="Pextraversion" src="personality/extraversion.jpeg">
+  <img class="Pneuro" src="personality/neuro.jpeg">
+  <img class="Popenness" src="personality/openness.jpeg">
+
+  <p class="copyright">Copyright &#169JPPM/Sakermatcher<br><br><br><br><br></p>
+
+</body>
+
+<script src="js/glowify.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/config.js"></script>
+<script src="js/intro.js"></script>
+
+
+</html>

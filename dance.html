@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/general.css">
+    <link type="text/css" rel="stylesheet" href="css/dance.css">
+    <title>Juan Pablo Pagan</title>
+</head>
+
+<body>
+
+    <div class="splash">
+        <svg viewBox="0 0 800 800">
+            <defs>
+                <g id="circles">
+                    <symbol id="dot">
+                        <circle cx="30" cy="30" r="30" />
+                    </symbol>
+                    <symbol id="moving-dot">
+                        <circle class="scanner" cx="175" cy="175" r="28" />
+                    </symbol>
+                </g>
+
+                <g id="filters">
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+
+                    <filter id="glow" filterUnits="userSpaceOnUse" x="-20%" y="-20%" height="140%" width="140%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
+                    </filter>
+
+                    <filter id="outer-glow" filterUnits="userSpaceOnUse" x="-50%" y="-50%" height="220%" width="220%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="outer-glow" />
+                    </filter>
+                </g>
+            </defs>
+
+            <g class="circles centered">
+                <use class="dot" href="#dot" x="106" y="106" />
+                <use class="dot" href="#dot" x="0" y="150" />
+                <use class="dot" href="#dot" x="-106" y="106" />
+                <use class="dot" href="#dot" x="-150" y="0" />
+                <use class="dot" href="#dot" x="-106" y="-106" />
+                <use class="dot" href="#dot" x="0" y="-150" />
+                <use class="dot" href="#dot" x="106" y="-106" />
+                <use class="dot" href="#dot" x="150" y="0" />
+
+                <use class="dot--light" href="#moving-dot" x="-150" y="-150" />
+            </g>
+
+
+            <g class="centered">
+                <use class="dot--glowing" href="#moving-dot" x="-150" y="-150" />
+            </g>
+
+        </svg>
+        <h1 class="intro">
+            Juan Pablo Pagán Marrón
+        </h1>
+    </div>
+
+    <div class="navbar">
+        <ul class="navbar-container">
+            <li class="nav-item"><a href="aboutMe.html" class="left-underline nav-button" data-scroll>About Me</a></li>
+            <li class="nav-item"><a href="programming.html" class="mid-underline nav-button" data-scroll>Programming</a>
+            </li>
+            <li class="nav-item"><a href="#dance" class="right-underline nav-button" data-scroll>Dance</a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/juan_pablo_pagan_/" target="_blank"
+                    class="ig-underline nav-button-icon" data-scroll><img class="icon" src="/icons/ig.png"></a></li>
+            <li class="nav-item"><a href="https://github.com/sakermatcher" target="_blank"
+                    class="git-underline nav-button-icon" data-scroll><img class="icon" src="icons/git.png"></a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/juan-pablo-pagan-bbab80253" target="_blank"
+                    class="link-underline nav-button-icon" data-scroll><img class="icon" src="icons/link.png"></a></li>
+        </ul>
+    </div>
+
+    <div id="dance" class="sec3">
+        <h1 class="sec3Title">
+            Dance
+        </h1>
+        <img class="sec3bak" src="me/JuanPa-6.jpeg">
+    </div>
+
+</body>
+<script src="js/intro.js"></script>
+
+</html>

@@ -1,0 +1,192 @@
+html{
+  scroll-behavior: smooth;
+  background-color: hsl(204, 100%, 9%);
+  height: 200vh;
+}
+
+
+:root {
+  --dot-radius: 1px;
+  --path-radius: 150px;
+  --vp-width: 10vw;
+  --vp-height: 10vw;
+
+  --static-dot-color: hsl(114, 100%, 33%);
+  --moving-dot-color: rgb(135, 255, 71);
+}
+
+.intro {
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  z-index: 5;
+  font-family: Neon;
+  display: inline-block;
+  font-size: 3vw;
+  left: 38vw;
+  width: 20vw;
+  top: 32%;
+  text-align: center;
+  color: rgb(220, 255, 219);
+  text-shadow: 0 0 20px #fff, 0 0 30px #4dff56, 0 0 40px #4dff65, 0 0 50px #53ff4d, 0 0 60px #4dff56, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
+}
+
+section{
+  position: fixed;
+  width: 200%;
+  top: -95vh;
+  left: -12vw;
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor:default;
+}
+
+section .row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  white-space: nowrap;
+  font-size: 64px;
+  transform: rotate(-30deg);
+}
+
+i{
+  color: rgba(0, 0, 0, 0.5);
+  transition: 5s;
+  padding: 0 0.7vw;
+  user-select: none;
+}
+
+i:hover{
+  color: #0f0;
+  transition: 0s;
+  text-shadow: 0 0 120px #0f0;
+}
+
+section .row div{
+  white-space: nowrap;
+  animation: backgroundl1 80s linear infinite;
+  animation-delay: -80s;
+}
+
+section .row div:nth-child(2){
+  animation: backgroundl2 80s linear infinite;
+  animation-delay: -40s;
+}
+
+section .row:nth-child(even) div{
+  white-space: nowrap;
+  animation: backgroundr1 80s linear infinite;
+  animation-delay: -80s;
+}
+
+section .row:nth-child(even) div:nth-child(2){
+  animation: backgroundr2 80s linear infinite;
+  animation-delay: -40s;
+}
+
+.secTitle {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 5px;
+    z-index: 5;
+    left: 33.5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 5vh;
+    display: block;
+    font-size: 3em;
+    color: rgb(220, 255, 219);
+    text-shadow: 0 0 20px #fff, 0 0 30px #4dff56, 0 0 40px #4dff65, 0 0 50px #53ff4d, 0 0 60px #4dff56, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
+}
+  
+  #txt1 {
+    position: absolute;
+    left: 5%;
+    top: 50vh;
+    z-index: 2;
+  }
+  
+  #txt2 {
+    position: absolute;
+    right: 5%;
+    top: 70vh;
+    z-index: 2;
+  }
+  
+  #txt3 {
+    position: absolute;
+    left: 5%;
+    top: 100vh;
+    z-index: 2;
+  }
+  
+  .ibm {
+    position: absolute;
+    top: 125vh;
+    left: 17%;
+    z-index: 3;
+    width: 18%;
+    height: 30%;
+    border-radius: 10px;
+  }
+  
+  #txt4 {
+    position: absolute;
+    right: 5%;
+    top: 120vh;
+    z-index: 2;
+  }
+
+  .txt:hover{
+    transition: all 0.6s;
+    color: #4eff21;
+    background-color: #0b0d23;
+    box-shadow: 0 0 10px #fff, 0 0 15px #4dff8b, 0 0 20px #62ff4d, 0 0 30px #6eff4d, 0 0 35px #16ff12;
+  }
+
+@keyframes backgroundl1{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes backgroundl2{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes backgroundr1{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes backgroundr2{
+  0%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

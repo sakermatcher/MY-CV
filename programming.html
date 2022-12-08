@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/general.css">
+    <link type="text/css" rel="stylesheet" href="css/programming.css">
+    <script src="https://kit.fontawesome.com/a49a4c3c1a.js" crossorigin="anonymous"></script>
+
+    <title>Juan Pablo Pagan</title>
+</head>
+
+<body>
+
+    <div class="splash">
+        <svg viewBox="0 0 800 800">
+            <defs>
+                <g id="circles">
+                    <symbol id="dot">
+                        <circle cx="30" cy="30" r="30" />
+                    </symbol>
+                    <symbol id="moving-dot">
+                        <circle class="scanner" cx="175" cy="175" r="28" />
+                    </symbol>
+                </g>
+
+                <g id="filters">
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+
+                    <filter id="glow" filterUnits="userSpaceOnUse" x="-20%" y="-20%" height="140%" width="140%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
+                    </filter>
+
+                    <filter id="outer-glow" filterUnits="userSpaceOnUse" x="-50%" y="-50%" height="220%" width="220%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="outer-glow" />
+                    </filter>
+                </g>
+            </defs>
+
+            <g class="circles centered">
+                <use class="dot" href="#dot" x="106" y="106" />
+                <use class="dot" href="#dot" x="0" y="150" />
+                <use class="dot" href="#dot" x="-106" y="106" />
+                <use class="dot" href="#dot" x="-150" y="0" />
+                <use class="dot" href="#dot" x="-106" y="-106" />
+                <use class="dot" href="#dot" x="0" y="-150" />
+                <use class="dot" href="#dot" x="106" y="-106" />
+                <use class="dot" href="#dot" x="150" y="0" />
+
+                <use class="dot--light" href="#moving-dot" x="-150" y="-150" />
+            </g>
+
+
+            <g class="centered">
+                <use class="dot--glowing" href="#moving-dot" x="-150" y="-150" />
+            </g>
+
+        </svg>
+        <h1 class="intro">
+            Juan Pablo Pagán Marrón
+        </h1>
+    </div>
+
+    <section>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-bug" aria-hidden="true"></i>
+                <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-nodes" aria-hidden="true"></i>
+                <i class="fa-solid fa-code-fork" aria-hidden="true"></i>
+                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="navbar">
+        <ul class="navbar-container">
+            <li class="nav-item"><a href="aboutMe.html" class="left-underline nav-button" data-scroll>About Me</a></li>
+            <li class="nav-item"><a href="#programming" class="mid-underline nav-button" data-scroll>Programming</a>
+            </li>
+            <li class="nav-item"><a href="dance.html" class="right-underline nav-button" data-scroll>Dance</a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/juan_pablo_pagan_/" target="_blank"
+                    class="ig-underline nav-button-icon" data-scroll><img class="icon" src="/icons/ig.png"></a></li>
+            <li class="nav-item"><a href="https://github.com/sakermatcher" target="_blank"
+                    class="git-underline nav-button-icon" data-scroll><img class="icon" src="icons/git.png"></a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/juan-pablo-pagan-bbab80253" target="_blank"
+                    class="link-underline nav-button-icon" data-scroll><img class="icon" src="icons/link.png"></a></li>
+        </ul>
+    </div>
+
+    <div id="programming" , class="sec">
+        <h1 class="secTitle">
+            &lt;/Programming&gt;
+        </h1>
+        <a id="txt1" class="txt2" href="#txt1">
+            <p>Now, lets talk about my experience programming</p>
+        </a>
+        <a id="txt2" class="txt2" target="_blank"
+            href="#https://sphero.com/collections/coding-robots/products/sphero-sprk-plus">
+            <p>As I perviously mentioned I started off when Iwas 11 years old, my first contact was witha
+                <b style="color: #fc46ff;">Sphero SPRK+</b>
+                that my brother gave me asa birthday present, which to be clear is a spherethat you can program on your
+                device.
+            </p>
+        </a>
+        <a id="txt3" class="txt2" href="https://www.edx.org" target="_blank">
+            <p>Later on I went online in search of learning more my uncle adviced me to start by learning Python which I
+                did at <b style="color: #fc46ff;">edX</b>, the course was IBM's Python Basics for Data Science</p>
+        </a>
+        <img class="ibm" src="/me/ibm.jpg">
+        <a id="txt4" class="txt2" href="#txt4">
+            <p>I spent a lot of time playing around and delvingdeeper into python and it's libraries, making myselfa
+                github porfile. I later on used W3Schools tolearn HTML, JS, and CSS</p>
+        </a>
+    </div>
+
+    <script src="js/intro.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --dot-radius: 1px;
+  --path-radius: 150px;
+  --vp-width: 10vw;
+  --vp-height: 10vw;
+
+  --static-dot-color: hsl(62, 100%, 45%);
+  --moving-dot-color: rgb(236, 255, 113);
+}
+
+.intro {
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  z-index: 5;
+  font-family: Neon;
+  display: inline-block;
+  font-size: 3vw;
+  left: 38vw;
+  width: 20vw;
+  top: 32%;
+  text-align: center;
+  color: rgb(220, 255, 219);
+  text-shadow: 0 0 20px #fff, 0 0 30px #f5ffcb, 0 0 40px #ebff00, 0 0 50px #e3ff00, 0 0 60px #eaff00, 0 0 70px #f1f100, 0 0 80px #ffff00;
+}
+
+.sec3 {
+    height: 650vh;
+    padding-top: 0%;
+    width: 100.1vmax;
+    margin: -1%;
+    position: -webkit-sticky;
+    top: 0vh;
+  }
+  
+  .sec3Title {
+    text-align: center;
+    font-family: modern;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 5px;
+    z-index: 5;
+    width: 21vw;
+    left: 39vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 5vh;
+    display: block;
+    font-size: 3em;
+    color: rgb(220, 255, 219);
+    text-shadow: 0 0 20px rgb(207, 207, 207), 0 0 30px #f5ffcb, 0 0 40px #ebff00, 0 0 50px #e3ff00, 0 0 60px #eaff00, 0 0 70px #f1f100, 0 0 80px #ffff00;
+  }
+  
+  .sec3bak {
+    position: sticky;
+    left: 0;
+    top: 0%;
+    height: 100vh;
+    width: 100.1vw;
+    z-index: -5;
+  }

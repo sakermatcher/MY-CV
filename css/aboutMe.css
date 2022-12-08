@@ -1,0 +1,377 @@
+html {
+  scroll-behavior: smooth;
+  background-color: hsl(204, 100%, 9%);
+}
+
+.jp {
+  position: absolute;
+  z-index: 5;
+  top: 5vh;
+  left: 25%;
+  width: 50%;
+  height: 50vh;
+}
+
+
+:root {
+  --dot-radius: 1px;
+  --path-radius: 150px;
+  --vp-width: 10vw;
+  --vp-height: 10vw;
+
+  --static-dot-color: hsl(197, 100%, 56%);
+  --moving-dot-color: rgb(66, 255, 246);
+}
+
+.intro {
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  z-index: 5;
+  font-family: Neon;
+  display: inline-block;
+  font-size: 3vw;
+  left: 38%;
+  width: 20vw;
+  top: 32%;
+  text-align: center;
+  color: rgb(220, 255, 219);
+  text-shadow: 0 0 20px #fff, 0 0 30px #4dfff0, 0 0 40px #4dffe7, 0 0 50px #4dffff, 0 0 60px #4df9ff, 0 0 70px #4dffff, 0 0 80px #4dffff;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 5;
+  top: 60vh;
+  left: 40%;
+  width: 18vw;
+  height: 27vh;
+}
+
+.jump{
+  width: 30vw;
+  height: 20vw;
+  z-index: 1;
+  border-radius: 15px;
+  top: 128vh;
+  left: 5vw;
+  position: absolute;
+  box-shadow: 0 0 5px #fff, 0 0 7px #4dfff0, 0 0 10px #4dd3ff, 0 0 15px #4dbbff, 0 0 17px #4d62ff;
+}
+
+.dont{
+  width: 30vw;
+  height: 20vw;
+  z-index: 1;
+  border-radius: 15px;
+  top: 128vh;
+  right: 5vw;
+  position: absolute;
+  box-shadow: 0 0 5px #fff, 0 0 7px #4dfff0, 0 0 10px #4dd3ff, 0 0 15px #4dbbff, 0 0 17px #4d62ff;
+}
+
+.sec1 {
+  height: 650vh;
+  padding-top: 0%;
+  width: 100vmax;
+  margin: -1%;
+  position: -webkit-sticky;
+  top: 100%;
+}
+
+#sec1guide {
+  display: block;
+  position: absolute;
+  width: 0.5vw;
+  border-radius: 5px;
+  background-color: #4df9ff;
+  box-shadow: 0 0 10px #fff, 0 0 15px #4dfff0, 0 0 20px #4dd3ff, 0 0 30px #4dbbff, 0 0 35px #4d62ff;
+}
+
+.centerGuide{
+  top: 130vh;
+  left: 49.8vw;
+}
+
+.sideGuide1{
+  top: 175vh;
+  left: 25vw;
+}
+
+.sideGuide2{
+  top: 175vh;
+  right: 25vw;
+}
+
+.sec1guideH {
+  display: block;
+  position: absolute;
+  top: 134vh;
+  left: 10vw;
+  width: 80vw;
+  height: 0.5vw;
+  background-color: #4df9ff;
+  box-shadow: 0 0 10px #fff, 0 0 15px #4dfff0, 0 0 20px #4dd3ff, 0 0 30px #4dbbff, 0 0 35px #4d62ff;
+}
+
+.sec1Title {
+  text-align: center;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  font-family: Neon;
+  border-radius: 5px;
+  width: 15vw;
+  z-index: 10;
+  left: 42.5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  top: 125vh;
+  display: block;
+  font-size: 5vh;
+  color: rgb(219, 255, 247);
+  text-shadow: 0 0 20px #fff, 0 0 30px #4dfff0, 0 0 40px #4dffe7, 0 0 50px #4dffff, 0 0 60px #4df9ff, 0 0 70px #4dffff, 0 0 80px #4dffff;
+}
+
+.quote {
+  top: 170vh;
+  left: 10vw;
+  width: 80vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-family: Modern;
+  color: rgb(0, 0, 0);
+}
+
+.quoteOn {
+  text-shadow: 0 0 20px #fff, 0 0 25px #4dffe7, 0 0 35px #4dffca, 0 0 30px #1df5b4;
+  color: #ffffff;
+  box-shadow: 0 0 5px #fff, 0 0 7px #4dfff0, 0 0 10px #4dd3ff, 0 0 15px #4dbbff, 0 0 17px #4d62ff;
+  background-color: #0b0d23;
+}
+
+.txt1On{
+  transition: all 0.6s;
+  color: #4dffff;
+  background-color: #0b0d23;
+  box-shadow: 0 0 10px #fff, 0 0 15px #4dfff0, 0 0 20px #4dd3ff, 0 0 30px #4dbbff, 0 0 35px #4d62ff;
+}
+
+#sec1Txt1 {
+  left: 3%;
+  top: 200vh;
+}
+
+#sec1Txt2 {
+  right: 3%;
+  top: 220vh;
+}
+
+#sec1Txt3 {
+  left: 3%;
+  top: 250vh;
+}
+
+#sec1Txt4 {
+  right: 3%;
+  top: 270vh;
+}
+
+#sec1Txt5 {
+  left: 3%;
+  top: 300vh;
+}
+
+#sec1Txt6 {
+  right: 3%;
+  top: 320vh;
+}
+
+#sec1Txt7 {
+  font-family: neon;
+  z-index: 0;
+  height: 140vh;
+  width: 90vw;
+  left: 3vw;
+  top: 371vh;
+  text-shadow: 0 0 20px #fff, 0 0 30px #4dfff0, 0 0 40px #4dffe7, 0 0 50px #4dffff, 0 0 60px #4df9ff, 0 0 70px #4dffff, 0 0 80px #4dffff;
+  color: #ffffff;
+  font-size: 2vw;
+}
+
+.Plink {
+  border-radius: 0.5%;
+  font-family: neon;
+  font-size: 1.1vw;
+  z-index: 3;
+  left: 40.5vw;
+  top: 387.5vh;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  color: #be1862;
+  background-color: rgb(250, 250, 250);
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.Phide {
+  border-radius: 0.5%;
+  font-family: Arial;
+  font-size: 1vw;
+  z-index: 3;
+  left: 38vw;
+  top: 393vh;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0em;
+  padding-right: 0em;
+  color: #1b1b1b;
+  background-color: rgb(250, 250, 250);
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.Pmain {
+  position: absolute;
+  top: 385vh;
+  left: 37.5vw;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.Pagree {
+  position: absolute;
+  top: 385vh;
+  left: 10vw;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.Pconcientiousness {
+  position: absolute;
+  top: 385vh;
+  right: 10vw;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.Pextraversion {
+  position: absolute;
+  top: 445vh;
+  left: 10vw;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.Pneuro {
+  position: absolute;
+  top: 445vh;
+  right: 10vw;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.Popenness {
+  position: absolute;
+  top: 445vh;
+  left: 37.5vw;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.sec2 {
+  height: 650vh;
+  padding-top: 0%;
+  width: 100vmax;
+  margin: -1%;
+  position: -webkit-sticky;
+  top: 650vh;
+}
+
+.sec2Title {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 5px;
+  z-index: 5;
+  left: 33.5%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  top: 650vh;
+  display: block;
+  font-size: 3em;
+  color: rgb(220, 255, 219);
+  text-shadow: 0 0 20px #fff, 0 0 30px #4dff56, 0 0 40px #4dff65, 0 0 50px #53ff4d, 0 0 60px #4dff56, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
+}
+
+.sec2bak {
+  position: sticky;
+  left: 0;
+  top: 0%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+#sec2Txt1 {
+  position: absolute;
+  left: 5%;
+  top: 700vh;
+  z-index: 2;
+}
+
+#sec2Txt2 {
+  position: absolute;
+  right: 5%;
+  top: 720vh;
+  z-index: 2;
+}
+
+#sec2Txt3 {
+  position: absolute;
+  left: 5%;
+  top: 750vh;
+  z-index: 2;
+}
+
+.ibm {
+  position: absolute;
+  top: 780vh;
+  left: 17%;
+  z-index: 3;
+  width: 18%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+#sec2Txt4 {
+  position: absolute;
+  right: 5%;
+  top: 770vh;
+  z-index: 2;
+}
+
+
+
+.copyright {
+  position: absolute;
+  top: 640vh;
+}
+
