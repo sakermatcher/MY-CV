@@ -6,12 +6,31 @@ html {
 .jp {
   position: absolute;
   z-index: 5;
-  top: 5vh;
-  left: 25%;
-  width: 50%;
+  top: 2vh;
+  left: 30%;
+  width: 40%;
   height: auto;
 }
 
+.contactCard{
+  transition: all 1s;
+  z-index: 6;
+  position: absolute;
+  top: 47vh;
+  border-radius: 10px;
+  left: 37.5vw;
+  width: 25vw;
+  height: auto;
+}
+
+.contactCard:hover{
+  transition: all 1s;
+  height: auto;
+  max-height: 90vh;
+  width: 60vw;
+  top: 2vh;
+  left: 20vw;
+}
 
 :root {
   --dot-radius: 1px;
@@ -37,15 +56,6 @@ html {
   text-align: center;
   color: rgb(220, 255, 219);
   text-shadow: 0 0 20px #fff, 0 0 30px #4dfff0, 0 0 40px #4dffe7, 0 0 50px #4dffff, 0 0 60px #4df9ff, 0 0 70px #4dffff, 0 0 80px #4dffff;
-}
-
-.arrow {
-  position: absolute;
-  z-index: 5;
-  top: 60vh;
-  left: 40%;
-  width: 18vw;
-  height: 27vh;
 }
 
 .jump{
