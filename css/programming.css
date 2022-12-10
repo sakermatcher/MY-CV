@@ -190,3 +190,7 @@ section .row:nth-child(even) div:nth-child(2){
     transform: translateX(0%);
   }
 }
+
+.copyright{
+  text-shadow: 0 0 20px #fff, 0 0 30px #4dff56, 0 0 40px #4dff65, 0 0 50px #53ff4d, 0 0 60px #4dff56, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
+}

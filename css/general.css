@@ -321,8 +321,7 @@ a.nav-button-icon {
     }
 }
 
-.txt1,
-.txt2 {
+.txt {
     height: 20vw;
     width: 40vw;
     padding-top: 2vh;
@@ -334,9 +333,8 @@ a.nav-button-icon {
 }
 
 .quote,
-.txt1,
-.txt2 {
-    border-radius: 20px;
+.txt{
+    border-radius: 10px;
     transition: all 0.6s;
     text-align: center;
     color: #ffffff;
@@ -349,4 +347,10 @@ a.nav-button-icon {
     -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
+.copyright {
+    position: absolute;
+    top: 640vh;
+    color: #ffffff;
 }
