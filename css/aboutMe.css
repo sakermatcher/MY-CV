@@ -1,6 +1,17 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   background-color: #001c2e;
+}
+
+:root {
+  --dot-radius: 1px;
+  --path-radius: 150px;
+  --vp-width: 10vw;
+  --vp-height: 10vw;
+
+  --static-dot-color: hsl(197, 100%, 56%);
+  --moving-dot-color: rgb(66, 255, 246);
 }
 
 .jp {
@@ -30,16 +41,7 @@ html {
   width: 60vw;
   top: 2vh;
   left: 20vw;
-}
-
-:root {
-  --dot-radius: 1px;
-  --path-radius: 150px;
-  --vp-width: 10vw;
-  --vp-height: 10vw;
-
-  --static-dot-color: hsl(197, 100%, 56%);
-  --moving-dot-color: rgb(66, 255, 246);
+  box-shadow: 0 0 5px #fff, 0 0 7px #4dfff0, 0 0 10px #4dd3ff, 0 0 15px #4dbbff, 0 0 25px #4d62ff;
 }
 
 .intro {
@@ -196,7 +198,7 @@ html {
 .canada{
   transition: 0.5s;
   position: relative;
-  height: 20%;
+  height: 25%;
   width: auto;
   z-index: 4;
   right: 0vw;
@@ -210,7 +212,7 @@ html {
   transition: all 1s;
   box-shadow: 0 0 5px #fff, 0 0 10px #ff5757, 0 0 15px #ff4242, 0 0 20px #ff3535, 0 0 25px #ff1919;
   background-color: #fff;
-  animation:infinite 3s canada;
+  animation:infinite 3s imgs;
 }
 
 #txt2 {
@@ -233,6 +235,7 @@ html {
   top: -60.5%;
   transition: all 1s;
   height: 105%;
+  border-radius: 0px;
 
 }
 
@@ -246,14 +249,142 @@ html {
   top: 270vh;
 }
 
+.achivement1
+{
+  position: absolute;
+  right: 40vw;
+  top: 270vh;
+  height: 20vw;
+  width: 5vw;
+}
+
+.bim1y2{
+  z-index: 5;
+  position: relative;
+  border-radius: 10px;
+  top: 65%;
+  transition: all 1s;
+  height: 30%;
+  width: auto;
+}
+
+.bim1y2:hover{
+  z-index: 6;
+  transition: all 1s;
+  top: 0%;
+  height: 105%;
+  border-radius: 0px;
+
+}
+
+.achivement2
+{
+  position: absolute;
+  right: 26vw;
+  top: 270vh;
+  height: 20vw;
+  width: 8vw;
+}
+
+.aoty{
+  z-index: 5;
+  transition: all 1s;
+  position: relative;
+  top: 65%;
+  border-radius: 10px;
+  height: 30%;
+  left: 0%;
+  width: auto;
+}
+
+.aoty:hover{
+  z-index: 6;
+  transition: all 1s;
+  top: 20%;
+  left: -158%;
+  height: 80%;
+  border-radius: 0px;
+
+}
+
+.achivement3
+{
+  position: absolute;
+  right: 10vw;
+  top: 270vh;
+  height: 20vw;
+  width: 5vw;
+}
+
+.grand{
+  z-index: 5;
+  position: relative;
+  border-radius: 10px;
+  top: 65%;
+  left: 0%;
+  transition: all 1s;
+  height: 30%;
+  width: auto;
+}
+
+.grand:hover{
+  z-index: 6;
+  transition: all 1s;
+  top: 0%;
+  left: -450%;
+  height: 105%;
+  border-radius: 0px;
+
+}
+
 #txt5 {
   left: 3%;
   top: 300vh;
 }
 
+.python{
+  transition: 0.5s;
+  position: relative;
+  height: 30%;
+  width: auto;
+  z-index: 4;
+  right: 0vw;
+  border-radius: 100px;
+  top: 3vh;
+  border-radius: 10px;
+  
+}
+
+.pythonOn{
+  transition: all 1s;
+  box-shadow: 0 0 20px #fff, 0 0 5px #f5ffcb, 0 0 7px #ebff00, 0 0 10px #e3ff00, 0 0 12px #eaff00, 0 0 15px #f1f100, 0 0 20px #ffff00;
+  background-color: #fff;
+  animation:infinite 3s imgs;
+}
+
 #txt6 {
   right: 3%;
   top: 320vh;
+}
+
+.dcc{
+  transition: 0.5s;
+  position: relative;
+  height: 25%;
+  width: auto;
+  z-index: 4;
+  right: 0vw;
+  border-radius: 100px;
+  top: 3vh;
+  border-radius: 10px;
+  
+}
+
+.dccOn{
+  transition: all 1s;
+  box-shadow: 0 0 5px #fff, 0 0 10px #88ff4d, 0 0 15px #acff4d, 0 0 17px #b8ff4d, 0 0 20px #90ff12;
+  background-color: #fff;
+  animation:infinite 3s imgs;
 }
 
 .txt7 {
@@ -398,7 +529,7 @@ html {
   text-shadow: 0 0 20px #fff, 0 0 30px #4dfff0, 0 0 40px #4dffe7, 0 0 50px #4dffff, 0 0 60px #4df9ff, 0 0 70px #4dffff, 0 0 80px #4dffff;
 }
 
-@keyframes canada{
+@keyframes imgs{
   0%{
     scale:1;
   }

@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
   background-color: hsl(204, 100%, 9%);
   height: 200vh;
 }

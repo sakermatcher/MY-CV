@@ -32,16 +32,20 @@ function checkOn1(at) {
 
     if (at >= 235) {
         document.querySelector('#txt5').classList.add('txtOn');
+        document.querySelector('.python').classList.add('pythonOn');
     }
     else {
         document.querySelector('#txt5').classList.remove('txtOn');
+        document.querySelector('.python').classList.remove('pythonOn');
     };
 
     if (at >= 255) {
         document.querySelector('#txt6').classList.add('txtOn');
+        document.querySelector('.dcc').classList.add('dccOn');
     }
     else {
         document.querySelector('#txt6').classList.remove('txtOn');
+        document.querySelector('.dcc').classList.remove('dccOn');
     };
 
     if (at >= 305) {
@@ -60,6 +64,9 @@ function calculateAge(date) {
 }
 
 window.addEventListener('load', (e) => {
+    if(screen.availHeight > screen.availWidth){
+        alert("Please view in a computer in landscape orientation!");
+    };
     setTimeout(() => {
         let age = calculateAge("1124946000000");
         document.querySelector('.age').innerHTML = ""+age ;
