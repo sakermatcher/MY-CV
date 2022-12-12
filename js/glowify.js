@@ -1,58 +1,66 @@
 function checkOn1(at) {
 
-    if (at >= 135) {
-        document.querySelector('#txt1').classList.add('txtOn');
+    if (at >= 115) {
+        document.querySelector('.txt1').classList.add('txtOn');
         document.querySelector('.canada').classList.add('canadaOn');
     }
     else {
-        document.querySelector('#txt1').classList.remove('txtOn');
+        document.querySelector('.txt1').classList.remove('txtOn');
         document.querySelector('.canada').classList.remove('canadaOn');
     };
 
-    if (at >= 155) {
-        document.querySelector('#txt2').classList.add('txtOn');
+    if (at >= 135) {
+        document.querySelector('.txt2').classList.add('txtOn');
     }
     else {
-        document.querySelector('#txt2').classList.remove('txtOn');
+        document.querySelector('.txt2').classList.remove('txtOn');
+    };
+
+    if (at >= 165) {
+        document.querySelector('.txt3').classList.add('txtOn');
+    }
+    else {
+        document.querySelector('.txt3').classList.remove('txtOn');
     };
 
     if (at >= 185) {
-        document.querySelector('#txt3').classList.add('txtOn');
+        document.querySelector('.txt4').classList.add('txtOn');
     }
     else {
-        document.querySelector('#txt3').classList.remove('txtOn');
+        document.querySelector('.txt4').classList.remove('txtOn');
     };
 
-    if (at >= 205) {
-        document.querySelector('#txt4').classList.add('txtOn');
-    }
-    else {
-        document.querySelector('#txt4').classList.remove('txtOn');
-    };
-
-    if (at >= 235) {
-        document.querySelector('#txt5').classList.add('txtOn');
+    if (at >= 215) {
+        document.querySelector('.txt5').classList.add('txtOn');
         document.querySelector('.python').classList.add('pythonOn');
     }
     else {
-        document.querySelector('#txt5').classList.remove('txtOn');
+        document.querySelector('.txt5').classList.remove('txtOn');
         document.querySelector('.python').classList.remove('pythonOn');
     };
 
-    if (at >= 255) {
-        document.querySelector('#txt6').classList.add('txtOn');
+    if (at >= 235) {
+        document.querySelector('.txt6').classList.add('txtOn');
         document.querySelector('.dcc').classList.add('dccOn');
     }
     else {
-        document.querySelector('#txt6').classList.remove('txtOn');
+        document.querySelector('.txt6').classList.remove('txtOn');
         document.querySelector('.dcc').classList.remove('dccOn');
     };
 
-    if (at >= 305) {
+    if (at >= 285) {
         document.querySelector('.txt7').classList.add('txtOn7');
     }
     else {
         document.querySelector('.txt7').classList.remove('txtOn7');
+    };
+    if (at >= 445) {
+        document.querySelector('.txt8').classList.add('txtOn');
+        document.querySelector('.txt9').classList.add('txtOn');
+    }
+    else {
+        document.querySelector('.txt8').classList.remove('txtOn');
+        document.querySelector('.txt9').classList.remove('txtOn');
     };
 };
 
@@ -105,9 +113,9 @@ window.onscroll = function (e) {
             document.querySelector('.vid').classList.remove('vidOn');
         };
     };
-    if (at >= 90 && at <= 400) {
-        document.querySelector('.sideGuide1').style.height = (at - 110).toString() + 'vh';
-        document.querySelector('.sideGuide2').style.height = (at - 110).toString() + 'vh';
+    if (at >= 30 && at <= 640) {
+        document.querySelector('.sideGuide1').style.height = (at - 90).toString() + 'vh';
+        document.querySelector('.sideGuide2').style.height = (at - 90).toString() + 'vh';
         checkOn1(at);
     };
 };

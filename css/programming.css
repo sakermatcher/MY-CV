@@ -54,14 +54,16 @@ section .row{
   transform: rotate(-30deg);
 }
 
-i{
+i,
+.secret{
   color: rgba(0, 0, 0, 0.5);
   transition: 5s;
   padding: 0 0.7vw;
   user-select: none;
 }
 
-i:hover{
+i:hover,
+.secret:hover{
   color: #0f0;
   transition: 0s;
   text-shadow: 0 0 120px #0f0;
@@ -117,6 +119,64 @@ section .row:nth-child(even) div:nth-child(2){
     top: 50vh;
     z-index: 2;
   }
+
+  .sphero1
+{
+  position: absolute;
+  left: 7vw;
+  top: 50vh;
+  height: 20vw;
+  width: 5vw;
+}
+
+.blockP{
+  z-index: 5;
+  position: relative;
+  border-radius: 10px;
+  top: 65%;
+  transition: all 1s;
+  height: 30%;
+  width: auto;
+  left: 0%;
+}
+
+.blockP:hover{
+  z-index: 6;
+  transition: all 1s;
+  top: 0%;
+  left: -30%;
+  height: 105%;
+  border-radius: 0px;
+
+}
+
+.sphero2
+{
+  position: absolute;
+  left: 40vw;
+  top: 50vh;
+  height: 20vw;
+  width: 5vw;
+}
+
+.bolt{
+  z-index: 5;
+  position: relative;
+  top: 65%;
+  transition: all 1s;
+  height: 30%;
+  width: auto;
+  left: 0%;
+}
+
+.bolt:hover{
+  z-index: 6;
+  transition: all 1s;
+  top: 0%;
+  left: -300%;
+  height: 105%;
+
+}
   
   #txt2 {
     position: absolute;
@@ -147,6 +207,10 @@ section .row:nth-child(even) div:nth-child(2){
     right: 5%;
     top: 120vh;
     z-index: 2;
+  }
+
+  .txt{
+    transition: all 6s;
   }
 
   .txt:hover{
