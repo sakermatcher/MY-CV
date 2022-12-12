@@ -11,6 +11,38 @@
     <title>Juan Pablo Pagan</title>
 </head>
 
+<style> /*Preload background without a transition so that it doesnt take 5s to get to its original state on launch*/
+    i,
+.secret{
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 0.7vw;
+    user-select: none;
+}
+
+section{
+    width: 200%;
+    top: -95vh;
+    left: -12vw;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor:default;
+    position: fixed;
+}
+
+section .row{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+    position: relative;
+}
+
+</style>
+
 <body>
 
     <div class="splash">
@@ -407,7 +439,7 @@
                 <i class="fa-solid fa-bug" aria-hidden="true"></i>
                 <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
                 <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-                <a href="" class="secret" style="text-decoration:none; font-family:modern ;" target="_blank"><b>S</b></a>
+                <a href="me/zecret.html" class="secret" style="text-decoration:none; font-family:modern ;"><b>S</b></a>
                 <i class="fa-solid fa-cube" aria-hidden="true"></i>
                 <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
                 <i class="fa-solid fa-window-maximize" aria-hidden="true"></i>
@@ -992,8 +1024,12 @@
         </div>
         
         <div id="txt4" class="txt">
-            <p style="text-align:justify ;">I spent a lot of time playing around and delving deeper into python and it's libraries, making myself a
-                github porfile. I later on used W3Schools to learn HTML, JS, and CSS</p>
+            <p style="text-align:justify ;">I spent a lot of time playing around and delving deeper into Python and its libraries, making myself a 
+                github porfile and many proyects (most I haven't uploaded yet). I later on used <a style="color: #fc46ff;" target="_blank"
+                href="https://www.w3schools.com">W3Schools</a> to learn HTML, JS, and CSS...
+                That and A ton of <a style="color: #fc46ff;" target="_blank"
+                href="https://stackoverflow.com">Stack Overflow</a> for any questions that rised. I am currently taking Harvard's CS50x Computer Science Course also at edX.</p>
+                <img src="me/cs50.webp" class="cs50">
             </div>
     </div>
 
