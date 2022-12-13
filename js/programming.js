@@ -22,7 +22,34 @@ function randomLight(collection){
 };
 
 if (isMobile() == true) {
-    const collection = document.getElementsByClassName("fa-solid");
+    const collection = document.getElementsByClassName("bak");
     setInterval(randomLight, 1000, collection);
 };
 
+function right (){
+    let r= document.querySelector(".pjright");
+    let l= document.querySelector(".pjleft");
+    let c= document.querySelector(".pjcenter");
+
+    r.classList.remove('pjright');
+    l.classList.remove('pjleft');
+    c.classList.remove('pjcenter');
+
+    r.classList.add('pjleft');
+    l.classList.add('pjcenter');
+    c.classList.add('pjright');
+};
+
+function left (){
+    let r= document.querySelector(".pjright");
+    let l= document.querySelector(".pjleft");
+    let c= document.querySelector(".pjcenter");
+
+    r.classList.remove('pjright');
+    l.classList.remove('pjleft');
+    c.classList.remove('pjcenter');
+
+    r.classList.add('pjcenter');
+    l.classList.add('pjright');
+    c.classList.add('pjleft');
+};
