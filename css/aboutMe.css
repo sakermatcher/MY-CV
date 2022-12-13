@@ -88,6 +88,7 @@ html {
   height: 20vh;
   z-index: 2;
   border-radius: 15px;
+  border-width: 0px;
   top: 145vh;
   left: 40vw;
   position: absolute;

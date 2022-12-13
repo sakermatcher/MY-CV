@@ -43,7 +43,7 @@ html{
   text-align: center;
   font-family: modern;
   z-index: 5;
-  width: 30vw;
+  width: 34.5vw;
   height: 55vh;
   padding-top: 45vh;
   left: 0vw;
@@ -95,12 +95,236 @@ html{
 
 #sec2{
   position: absolute;
+  background-color: crimson;
   top: 100vh;
   left: 0vw;
   width: 100vw;
   height: 100vh;
 }
 
+.sec2bak{
+  position: absolute;
+  width:auto ;
+  height: 100vh;
+  box-shadow: 0 0 5px #171717;
+  z-index: 2;
+}
+
+.sec2MiddleLine{
+  position: absolute;
+  background-color: #000000;
+  display: block;
+  height:33vh;
+  width: 100vw;
+  top: 33vh;
+  left: 0vw;
+  z-index:1;
+  box-shadow: 0 0 5px #171717;
+}
+
+.tdrMty{
+  position: absolute;
+  z-index: 3;
+  font-family: modern;
+  text-align: center;
+  top: 30vh;
+  font-size: 4vw;
+  height: 20vh;
+  width: 35.5vw;
+  color: #d8d8d8;
+}
+
+.wavesMty{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  right: 15vw;
+  top: 5vh;
+  width: 20vw;
+  height: 20vh;
+  box-shadow: 0 0 5px #171717;
+}
+
+.wavesMtyTxt{
+  font-family: modern;
+  position: absolute;
+  text-align: center;
+  width: 20vw;
+  font-size: 2vw;
+  top: 10vh;
+  right: 35vw;
+}
+
+.hrMty{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  right: 35vw;
+  top: 38vh;
+  width: 20vw;
+  height: 20vh;
+  z-index: 3;
+  box-shadow: 0 0 5px crimson;
+}
+
+.hrMtyTxt{
+  color: crimson;
+  font-family: modern;
+  position: absolute;
+  text-align: center;
+  width: 30vw;
+  font-size: 2vw;
+  top: 43vh;
+  right: 7vw;
+  z-index: 3;
+}
+
+.ikaeeMty{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  right: 15vw;
+  top: 71vh;
+  width: 20vw;
+  height: 20vh;
+  box-shadow: 0 0 5px #171717;
+}
+
+.ikaeeMtyTxt{
+  font-family: modern;
+  position: absolute;
+  text-align: center;
+  width: 30vw;
+  font-size: 2vw;
+  top: 76vh;
+  right: 32vw;
+}
+
+#sec3{
+  position: absolute;
+  background-image: url("../icons/gold.jpg");
+  background-position: 10vw 0vh;
+  background-color: gold;
+  top: 200vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec3bak{
+  position: absolute;
+  width:auto ;
+  height: 100vh;
+  box-shadow: 0 0 5px #171717;
+  z-index: 2;
+}
+
+.sec3MiddleLine{
+  position: absolute;
+  background-color: #000000;
+  display: block;
+  height:33vh;
+  width: 100vw;
+  top: 33vh;
+  left: 0vw;
+  z-index:1;
+  box-shadow: 0 0 5px #171717;
+}
+
+.grandMer{
+  position: absolute;
+  z-index: 3;
+  font-family: modern;
+  text-align: center;
+  top: 30vh;
+  font-size: 4vw;
+  height: 20vh;
+  width: 35.5vw;
+  color: #d8d8d8;
+}
+
+.falseMer{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  right: 15vw;
+  top: 5vh;
+  width: 20vw;
+  height: 20vh;
+  box-shadow: 0 0 5px #171717;
+}
+
+.falseMerTxt{
+  font-family: modern;
+  position: absolute;
+  text-align: center;
+  width: 25vw;
+  font-size: 2vw;
+  top: 10vh;
+  right: 35vw;
+}
+
+.hrMer{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  right: 35vw;
+  top: 38vh;
+  width: 20vw;
+  height: 20vh;
+  z-index: 3;
+  box-shadow: 0 0 5px gold;
+}
+
+.hrMerTxt{
+  color: gold;
+  font-family: modern;
+  position: absolute;
+  text-align: center;
+  width: 30vw;
+  font-size: 2vw;
+  top: 43vh;
+  right: 7vw;
+  z-index: 3;
+}
+
+.ikaeeMer{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  right: 15vw;
+  top: 71vh;
+  width: 20vw;
+  height: 20vh;
+  box-shadow: 0 0 5px #171717;
+}
+
+.ikaeeMerTxt{
+  font-family: modern;
+  position: absolute;
+  text-align: center;
+  width: 20vw;
+  font-size: 2vw;
+  top: 76vh;
+  right: 35vw;
+}
+
+.gold{
+  color: gold;
+  text-shadow: 0 0 5px gold;
+}
+
+.silver{
+  color: silver;
+  text-shadow: 0 0 5px silver;
+}
+
+.plat{
+  color: #38fcff;
+  text-shadow: 0 0 5px rgb(65, 236, 255);
+}
+
 .copyright{
+  right: 2vw;
   text-shadow: 0 0 20px rgb(207, 207, 207), 0 0 30px #f5ffcb, 0 0 40px #ebff00, 0 0 50px #e3ff00, 0 0 60px #eaff00, 0 0 70px #f1f100, 0 0 80px #ffff00;
 }

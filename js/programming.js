@@ -26,6 +26,7 @@ if (isMobile() == true) {
     setInterval(randomLight, 1000, collection);
 };
 
+
 function right (){
     let r= document.querySelector(".pjright");
     let l= document.querySelector(".pjleft");

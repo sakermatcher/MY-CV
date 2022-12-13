@@ -315,7 +315,7 @@ section .row:nth-child(even) div:nth-child(2){
 }
 
 .pjcenter p{
-  font-size: 0.8vw;
+  font-size: 1.5vw;
   left: 30%;
 }
 
@@ -324,7 +324,7 @@ section .row:nth-child(even) div:nth-child(2){
   position: relative;
   top: -2%;
   left: 99%;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(50, 50, 50, 0.9);
 }
 
 .fa-up-right-from-square:hover{
@@ -334,35 +334,36 @@ section .row:nth-child(even) div:nth-child(2){
 }
 
 .pyramid{
+  transition: all 0.5s;
   position: relative;
-  width: 25%;
-  left: 55%;
-  top: -20%;
-  height: auto;
+  height: 50%;
+  left: 10%;
+  width: auto;
 }
 
 .cube{
+  transition: all 0.5s;
   position: relative;
-  width: 25%;
-  left: 45%;
-  top: 10%;
-  height: auto;
+  top: 0%;
+  height: 50%;
+  left: 40%;
+  width: auto;
 }
 
 .game{
   position: relative;
-  width: 55%;
-  left: 40%;
-  top: -15%;
-  height: auto;
+  height: 44%;
+  left: 0%;
+  top: 0%;
+  width: auto;
 }
 
 .sudoku{
   position: relative;
-  width: 65%;
-  left: 35%;
-  top: -15%;
-  height: auto;
+  height: 50%;
+  left: 0%;
+  top: 0%;
+  width: auto;
 }
 
 .txt{
