@@ -37,7 +37,8 @@ i,
   transition: all 5s;
 }
 
-i:hover{
+i:hover,
+.active{
   color: #0f0;
   transition: 0s;
   text-shadow: 0 0 120px #0f0;
@@ -88,7 +89,7 @@ section .row:nth-child(even) div:nth-child(2){
     position: absolute;
     top: 5vh;
     display: block;
-    font-size: 3em;
+    font-size: 3vw;
     color: rgb(220, 255, 219);
     text-shadow: 0 0 20px #fff, 0 0 30px #4dff56, 0 0 40px #4dff65, 0 0 50px #53ff4d, 0 0 60px #4dff56, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
 }
@@ -195,24 +196,22 @@ section .row:nth-child(even) div:nth-child(2){
   border-radius: 0px;
 }
 
-.proyectsTitle {
+.projectsTitle {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding-left: 15px;
-  padding-left: 1em;
-  padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-radius: 5px;
   z-index: 5;
-  left: 33.5%;
+  left: 40vw;
+  width: 20vw;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   position: absolute;
-  top: 5vh;
+  top: 170vh;
   display: block;
-  font-size: 3em;
+  font-size: 3vw;
   color: rgb(220, 255, 219);
   text-shadow: 0 0 20px #fff, 0 0 30px #4dff56, 0 0 40px #4dff65, 0 0 50px #53ff4d, 0 0 60px #4dff56, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
 }
