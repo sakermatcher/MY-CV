@@ -317,7 +317,7 @@ html {
   width: 5vw;
 }
 
-.grand{
+.impact{
   z-index: 5;
   position: relative;
   border-radius: 10px;
@@ -328,11 +328,11 @@ html {
   width: auto;
 }
 
-.grand:hover{
+.impact:hover{
   z-index: 6;
   transition: all 1s;
   top: 0%;
-  left: -450%;
+  left: -320%;
   height: 105%;
   border-radius: 0px;
 

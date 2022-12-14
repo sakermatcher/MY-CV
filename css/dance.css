@@ -105,6 +105,7 @@ html{
 .sec2bak{
   position: absolute;
   width:auto ;
+  right: 0vw;
   height: 100vh;
   box-shadow: 0 0 5px #171717;
   z-index: 2;
@@ -117,7 +118,7 @@ html{
   height:33vh;
   width: 100vw;
   top: 33vh;
-  left: 0vw;
+  right: 0vw;
   z-index:1;
   box-shadow: 0 0 5px #171717;
 }
@@ -129,6 +130,7 @@ html{
   text-align: center;
   top: 30vh;
   font-size: 4vw;
+  right: 0vw;
   height: 20vh;
   width: 35.5vw;
   color: #d8d8d8;
@@ -138,7 +140,7 @@ html{
   position: absolute;
   border-width: 0px;
   border-radius: 10px;
-  right: 15vw;
+  left: 15vw;
   top: 5vh;
   width: 20vw;
   height: 20vh;
@@ -152,14 +154,14 @@ html{
   width: 20vw;
   font-size: 2vw;
   top: 10vh;
-  right: 35vw;
+  left: 35vw;
 }
 
 .hrMty{
   position: absolute;
   border-width: 0px;
   border-radius: 10px;
-  right: 35vw;
+  left: 35vw;
   top: 38vh;
   width: 20vw;
   height: 20vh;
@@ -175,7 +177,7 @@ html{
   width: 30vw;
   font-size: 2vw;
   top: 43vh;
-  right: 7vw;
+  left: 7vw;
   z-index: 3;
 }
 
@@ -183,7 +185,7 @@ html{
   position: absolute;
   border-width: 0px;
   border-radius: 10px;
-  right: 15vw;
+  left: 15vw;
   top: 71vh;
   width: 20vw;
   height: 20vh;
@@ -197,13 +199,13 @@ html{
   width: 30vw;
   font-size: 2vw;
   top: 76vh;
-  right: 32vw;
+  left: 32vw;
 }
 
 #sec3{
   position: absolute;
   background-image: url("../icons/gold.jpg");
-  background-position: 10vw 0vh;
+  background-position: 30vw 0vh;
   background-color: gold;
   top: 200vh;
   left: 0vw;
