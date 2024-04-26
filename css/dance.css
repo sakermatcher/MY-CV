@@ -90,7 +90,149 @@ html{
 }
 
 .arrowD{
-  top: 84vh;
+  bottom: 6vh;
+}
+
+.txt1R,
+.txt2R,
+.txt3R,
+.txt1L,
+.txt2L,
+.txt3L{
+  position: absolute;
+  font-family: modern;
+  text-align: center;
+  font-size: 2vw;
+  z-index: 3;
+  width: 25vw;
+}
+
+.txt1R{
+  top: 16vh;
+  right: 33vw;
+}
+
+.txt2R{
+  top: 40vh;
+  right: 4vw;
+  color: white;
+}
+
+.txt3R{
+  bottom: 16vh;
+  right: 33vw;
+}
+
+.txt1L{
+  top: 16vh;
+  left: 33vw;
+}
+
+.txt2L{
+  top: 40vh;
+  left: 4vw;
+  color: white;
+}
+
+.txt3L{
+  bottom: 16vh;
+  left: 33vw;
+}
+
+.vid1R,
+.vid2R,
+.vid3R,
+.vid1L,
+.vid2L,
+.vid3L{
+  position: absolute;
+  border-width: 0px;
+  border-radius: 10px;
+  width: 20vw;
+  height: 20vh;
+  z-index: 3;
+  box-shadow: 0 0 5px #171717;
+}
+
+.vid1R{
+  top: 14vh;
+  right: 7vw;
+}
+
+.vid2R{
+  top: 40vh;
+  right: 35vw;
+  box-shadow: 0 0 5px #e6e6e6;
+}
+
+.vid3R{
+  bottom: 14vh;
+  right: 7vw;
+}
+
+.vid1L{
+  top: 14vh;
+  left: 7vw;
+}
+
+.vid2L{
+  top: 40vh;
+  left: 35vw;
+  box-shadow: 0 0 5px #e6e6e6;
+}
+
+.vid3L{
+  bottom: 14vh;
+  left: 7vw;
+}
+
+.titleR,
+.titleL{
+  position: absolute;
+  font-family: modern;
+  text-align: center;
+  font-size: 8vh;
+  top: 10vh;
+  z-index: 3;
+}
+
+.titleR{
+  right: 0vw;
+  width: 35.5vw;
+}
+
+.titleL{
+  left: 0vw;
+  width: 35.5vw;
+}
+
+.bakR,
+.bakL{
+  position: absolute;
+  background-size: cover;
+  width: 36vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0vh;
+  box-shadow: 0 0 5px #171717;
+}
+
+.bakR{
+  right: 0vw;
+}
+
+.bakL{
+  left: 0vw;
+}
+
+.middleLine{
+  position: absolute;
+  background-color: black;
+  display: block;
+  height: 26vh;
+  width: 100vw;
+  top: 37vh;
+  z-index: 1;
 }
 
 #sec2{
@@ -102,213 +244,45 @@ html{
   height: 100vh;
 }
 
-.sec2bak{
-  position: absolute;
-  width:auto ;
-  right: 0vw;
-  height: 100vh;
-  box-shadow: 0 0 5px #171717;
-  z-index: 2;
-}
-
-.sec2MiddleLine{
-  position: absolute;
-  background-color: #000000;
-  display: block;
-  height:33vh;
-  width: 100vw;
-  top: 33vh;
-  right: 0vw;
-  z-index:1;
-  box-shadow: 0 0 5px #171717;
-}
-
-.tdrMty{
-  position: absolute;
-  z-index: 3;
-  font-family: modern;
-  text-align: center;
-  top: 30vh;
-  font-size: 4vw;
-  right: 0vw;
-  height: 20vh;
-  width: 35.5vw;
-  color: #d8d8d8;
-}
-
-.wavesMty{
-  position: absolute;
-  border-width: 0px;
-  border-radius: 10px;
-  left: 15vw;
-  top: 5vh;
-  width: 20vw;
-  height: 20vh;
-  box-shadow: 0 0 5px #171717;
-}
-
-.wavesMtyTxt{
-  font-family: modern;
-  position: absolute;
-  text-align: center;
-  width: 20vw;
-  font-size: 2vw;
-  top: 10vh;
-  left: 35vw;
-}
-
-.hrMty{
-  position: absolute;
-  border-width: 0px;
-  border-radius: 10px;
-  left: 35vw;
-  top: 38vh;
-  width: 20vw;
-  height: 20vh;
-  z-index: 3;
-  box-shadow: 0 0 5px crimson;
-}
-
-.hrMtyTxt{
-  color: crimson;
-  font-family: modern;
-  position: absolute;
-  text-align: center;
-  width: 30vw;
-  font-size: 2vw;
-  top: 43vh;
-  left: 7vw;
-  z-index: 3;
-}
-
-.ikaeeMty{
-  position: absolute;
-  border-width: 0px;
-  border-radius: 10px;
-  left: 15vw;
-  top: 71vh;
-  width: 20vw;
-  height: 20vh;
-  box-shadow: 0 0 5px #171717;
-}
-
-.ikaeeMtyTxt{
-  font-family: modern;
-  position: absolute;
-  text-align: center;
-  width: 30vw;
-  font-size: 2vw;
-  top: 76vh;
-  left: 32vw;
-}
-
 #sec3{
   position: absolute;
-  background-image: url("../icons/gold.jpg");
-  background-position: 30vw 0vh;
-  background-color: gold;
+  background-color: crimson;
   top: 200vh;
   left: 0vw;
   width: 100vw;
   height: 100vh;
 }
 
-.sec3bak{
+#sec4{
   position: absolute;
-  width:auto ;
-  height: 100vh;
-  box-shadow: 0 0 5px #171717;
-  z-index: 2;
-}
-
-.sec3MiddleLine{
-  position: absolute;
-  background-color: #000000;
-  display: block;
-  height:33vh;
-  width: 100vw;
-  top: 33vh;
+  background-image: url("../icons/gold.jpg");
+  background-position: 30vw 0vh;
+  background-color: rgb(255, 179, 0);
+  top: 300vh;
   left: 0vw;
-  z-index:1;
-  box-shadow: 0 0 5px #171717;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
 
-.grandMer{
+#sec5{
   position: absolute;
-  z-index: 3;
-  font-family: modern;
-  text-align: center;
-  top: 30vh;
-  font-size: 4vw;
-  height: 20vh;
-  width: 35.5vw;
-  color: #d8d8d8;
+  background-position: 30vw 0vh;
+  background-color: gold;
+  top: 400vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
 }
 
-.falseMer{
+#sec6{
   position: absolute;
-  border-width: 0px;
-  border-radius: 10px;
-  right: 15vw;
-  top: 5vh;
-  width: 20vw;
-  height: 20vh;
-  box-shadow: 0 0 5px #171717;
-}
-
-.falseMerTxt{
-  font-family: modern;
-  position: absolute;
-  text-align: center;
-  width: 25vw;
-  font-size: 2vw;
-  top: 10vh;
-  right: 35vw;
-}
-
-.hrMer{
-  position: absolute;
-  border-width: 0px;
-  border-radius: 10px;
-  right: 35vw;
-  top: 38vh;
-  width: 20vw;
-  height: 20vh;
-  z-index: 3;
-  box-shadow: 0 0 5px gold;
-}
-
-.hrMerTxt{
-  color: gold;
-  font-family: modern;
-  position: absolute;
-  text-align: center;
-  width: 30vw;
-  font-size: 2vw;
-  top: 43vh;
-  right: 7vw;
-  z-index: 3;
-}
-
-.ikaeeMer{
-  position: absolute;
-  border-width: 0px;
-  border-radius: 10px;
-  right: 15vw;
-  top: 71vh;
-  width: 20vw;
-  height: 20vh;
-  box-shadow: 0 0 5px #171717;
-}
-
-.ikaeeMerTxt{
-  font-family: modern;
-  position: absolute;
-  text-align: center;
-  width: 20vw;
-  font-size: 2vw;
-  top: 76vh;
-  right: 35vw;
+  background-position: 30vw 0vh;
+  background-color: crimson;
+  top: 500vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 .gold{
@@ -324,6 +298,16 @@ html{
 .plat{
   color: #38fcff;
   text-shadow: 0 0 5px rgb(65, 236, 255);
+}
+
+.revolux{
+  color: #cd0000;
+  text-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+.revolt-standout{
+  color: #9600cd;
+  text-shadow: 0 0 5px rgb(247, 103, 255);
 }
 
 .copyright{
